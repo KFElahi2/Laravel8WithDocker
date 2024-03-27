@@ -19,8 +19,6 @@ The is about installing Laravel 8 application in docker using docker compose and
 
 **composer:** composer:2.5.7
 
-**volume type:** bind mount
-
 ## How to deploy the app
 
 Clone the repo

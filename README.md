@@ -2,7 +2,7 @@
 
 # Laravel 8 app with Docker
 
-The application is about installing Laravel 8 in docker using docker compose and docker file.
+The is about installing Laravel 8 application in docker using docker compose and docker file.
 
 
 

@@ -10,5 +10,5 @@ USER laravel
 
 #ENV COMPOSER_ALLOW_SUPERUSER=1
 #COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
-COPY docker/script.sh ./
+#COPY docker/script.sh ./
 

@@ -41,7 +41,7 @@ Copy .env.example to .env.
 cp .env.example .env
 ```
 
-Change DB credentials in .env. Credentials should be same as ./docker/env/mysql.env
+Change DB credentials in .env. Credentials must be same as ./docker/env/mysql.env
 
 ```dotenv
 DB_CONNECTION=mysql
@@ -66,11 +66,17 @@ docker compose run --rm composer install
 Migrate DB using artisan command
 
 ```bash
-docker compose run –rm artisan migrate
+docker compose run --rm artisan migrate
 ```
 
 Generate app key using artisan command
 
 ```bash
-docker compose run –rm artisan key:generate
+docker compose run --rm artisan key:generate
+```
+
+Stop running containers
+
+```bash
+docker compose down
 ```

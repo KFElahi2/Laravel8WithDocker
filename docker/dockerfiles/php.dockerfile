@@ -1,6 +1,6 @@
 FROM php:7.4-fpm-alpine
 
-WORKDIR /var/www/html
+WORKDIR /var/www/html/forum
 
 RUN docker-php-ext-install pdo pdo_mysql
 

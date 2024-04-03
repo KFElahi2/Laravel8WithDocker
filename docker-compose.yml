@@ -14,6 +14,9 @@ services:
     build:
       context: .
       dockerfile: docker/dockerfiles/php.dockerfile
+      args:
+        - UID=${UID:-1008}
+        - GID=${GID:-1008}
     volumes:
       - ./:/var/www/html/forum
   mysql:

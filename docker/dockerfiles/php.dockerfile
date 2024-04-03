@@ -1,10 +1,13 @@
 FROM php:7.4-fpm-alpine
 
+ARG UID
+ARG GID
+
 WORKDIR /var/www/html/forum
 
 RUN docker-php-ext-install pdo pdo_mysql
 
-RUN addgroup -g 1000 laravel && adduser -G laravel -g laravel -s /bin/sh -D laravel
+RUN addgroup -g ${GID} laravel && adduser -G laravel -g laravel -s /bin/sh -D -u ${UID} laravel
 
 USER laravel
 
